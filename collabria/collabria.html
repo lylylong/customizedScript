@@ -1,0 +1,131 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Collabria Call Interaction Tracker</title>
+
+    
+    
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/css/bootstrap.min.css">
+<meta name="x-stylesheet-fallback-test" content="" class="sr-only"><link rel="stylesheet" href="content/toratvuapp001/lib/bootstrap/dist/css/bootstrap.min.css">
+       <link rel="stylesheet" href="content/toratvuapp001/css/site.min.css">
+    
+  
+</head>
+<body>
+    <div>
+        
+<div id="topbar" style="background-color: black;">
+    <div class="title">
+        <div id="companyName" style="text-align:center">
+            <p>
+                    <img src="content/toratvuapp001/images/coll.jpg" width="40" height="40" style="vertical-align:middle">
+                <span style="vertical-align:middle">Collabria</span>
+            </p>
+        </div>
+        <p id="callInteractionTracker" style="letter-spacing:normal">Call Interaction Tracker</p>
+    </div>
+</div>
+
+<div class="container body-content">
+<form action="content/toratvuapp001/Home/Submit" method="post">        <!-- Hidden Inputs to be retrieved from query string -->
+        
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="row">
+                <div class="col-md-4 form-group">
+                    <label class="control-label" for="DateTime">Date Time</label>
+                    <input class="form-control" value="10/24/2017 5:31:54 PM" readonly="" type="datetime" id="DateTime" name="DateTime">
+                </div>
+
+                <div class="col-md-4 form-group">
+                    <label class="control-label" for="AgentCiscoId">Agent Cisco ID</label>
+                    <input class="form-control" value="69990" readonly="" type="text" data-val="true" data-val-required="The Agent Cisco ID field is required." id="AgentCiscoId" name="AgentCiscoId">
+                </div>
+
+                <div class="col-md-4 form-group">
+                    <label class="control-label" for="MemberId">Member ID</label>
+                    <select id="MemberId" class="form-control" name="MemberId">
+                        <option value="">Select</option>
+                    <option value="Collabria">Collabria</option>
+<option value="Meridian">Meridian</option>
+<option value="Sunova">Sunova</option>
+</select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 form-group">
+                    <label class="control-label" for="Language">Language</label>
+                    <input class="form-control" value="Eng" readonly="" type="text" data-val="true" data-val-required="The Language field is required." id="Language" name="Language">
+                </div>
+
+                <div class="col-md-4 form-group">
+                    <label class="control-label" for="CallType">Call Type</label>
+                    <input class="form-control" value="Col_Call_Default" readonly="" type="text" data-val="true" data-val-required="The Call Type field is required." id="CallType" name="CallType">
+                </div>
+
+                <div class="col-md-4 form-group">
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 form-group">
+                    <label class="control-label" for="DispositionLevel1">Disposition Level 1</label>
+                    <select id="DispositionLevel1" class="form-control" name="DispositionLevel1">
+                        <option value="">Select</option>
+                    <option value="Business">Business</option>
+<option value="Consumer">Consumer</option>
+</select>
+                </div>
+
+                <div class="col-md-4 form-group">
+                    <label class="control-label" for="DispositionLevel2">Disposition Level 2</label>
+                    <select id="DispositionLevel2" class="form-control" name="DispositionLevel2">
+                        <option value="">Select</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4 form-group">
+                    <label class="control-label" for="DispositionLevel3">Disposition Level 3</label>
+                    <select id="DispositionLevel3" class="form-control" name="DispositionLevel3">
+                        <option value="">Select</option>
+                    </select>
+                </div>
+                <div style="margin-top:10px;" class="col-md-12 form-group">
+                    <button asp-action="Submit" type="submit" class="btn btn-default btn-block"><b>Submit</b></button>
+                </div>
+            </div>
+</form></div>
+
+
+
+
+
+
+
+
+    </div>
+
+    
+    
+        
+
+        
+
+        
+        
+    
+
+    
+
+
+</body></html>
